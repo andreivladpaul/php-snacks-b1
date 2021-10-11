@@ -35,4 +35,14 @@ $matches = [
 for ($i = 0; $i < count($matches); $i++) {
     echo " <p> {$matches[$i]['teamHome']} - {$matches[$i]['teamAway']} | {$matches[$i]['scoreHome']}-{$matches[$i]['scoreAway']}</p>";
 }
+
+/* date_default_timezone_set('Europe/Rome');
+
+echo date('h:i:s'); */
+
+$timestamp = mktime(10, 14, 54, 9, 10, 1981);
+
+
+echo date('d/m/Y', $timestamp);
+
 ?>
